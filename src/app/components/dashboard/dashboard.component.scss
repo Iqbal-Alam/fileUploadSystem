@@ -1,0 +1,33 @@
+
+.heading{
+    font-size: 36px;
+    padding: 50px;
+    text-align: center;
+}
+.file-upload-section{
+    margin: 20px;
+    .fileUpload-form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .custom-file-upload{
+            // padding: 20px;
+            input{
+                padding: 5px;
+                border: 1px solid;
+                font-size: 16px;
+                margin: 0 10px;
+            }
+            button{
+
+            }
+        }   
+    }
+}
+
+.uploadFileView{
+    background: #ccc;
+    width: 50%;
+    margin: 0 auto;
+    padding: 100px;
+}

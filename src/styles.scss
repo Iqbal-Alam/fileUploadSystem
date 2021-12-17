@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+@import 'assets/scss/reset.scss';
+@import 'assets/scss/theme-color.scss';
+@import 'assets/scss/font.scss';
+@import 'assets/scss/base.scss';
+@import 'assets/scss/grid.scss';
+// Plus imports for other components in your app.
+
+$custom-typography: mat-typography-config($font-family: '"Josefin Sans", sans-serif;');
+$test-primary: mat-palette( $mat-blue);
+$test-accent: mat-palette($mat-orange);
+$test-warn: mat-palette($mat-red);
+$test-theme: mat-light-theme((
+  color: (
+    primary: $test-primary,
+    accent: $test-accent,
+    warn: $test-warn,
+  )
+));
+@include mat-core($custom-typography);
+@include angular-material-theme($test-theme);
+
+html { height: 100%; }
+body {height: 100%; margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif}
